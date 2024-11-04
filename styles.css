@@ -1,7 +1,7 @@
 body {
     font-family: Mplus 1p, sans-serif;
-    margin: 0;
-        text-align: center; 
+    margin:0;
+    text-align: center; 
     }
     p {
         font-size: 16px; 
@@ -17,7 +17,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px;
+    padding: 5px;
     background-color: #4C76B0;
 }
 
@@ -37,5 +37,7 @@ main {
 .image-container {
     text-align: center;
     margin-top: 50px;
-    
+
+
+
 }
