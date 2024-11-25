@@ -1,4 +1,8 @@
 function IrInicio(){
-    windows.location.href="quienessomos2.html";       
+    document.location.href="quienessomos2.html";       
+
+}
+function Irqtres(){
+    document.location.href="quienessomos3.html";       
 
 }
