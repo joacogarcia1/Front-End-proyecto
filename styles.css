@@ -428,94 +428,67 @@ body {
     cursor: pointer;
   }
 /*INCIAR 2*/
-body {
-  font-family: Mplus 1p, sans-serif;
+body, ul, li, h1, p {
   margin: 0;
   padding: 0;
-  background-color: #f9f9f9;
+  box-sizing: border-box;
 }
 
-.navbar {
+body {
+  font-family: Mplus 1p, sans-serif;
+  background-color: #f7e4b6; /* Fondo beige */
+}
+
+/* Header */
+header {
   display: flex;
-  justify-content: space-around;
+  align-items: center;
+  justify-content: space-between;
   background-color: #477fc0;
-  padding: 10px 0;
-}
-
-.navbar button {
-  background: none;
-  border: none;
+  padding: 10px 20px;
   color: white;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 15px;
+}
+
+nav li {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
   font-size: 16px;
-  cursor: pointer;
 }
 
-.navbar .active {
-  font-weight: bold;
-  text-decoration: underline;
-}
-
-main {
-  text-align: center;
+/* Controles */
+.controls {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
   margin-top: 40px;
 }
 
-.buttons {
-  display: flex;
-  justify-content: center;
-  gap: 30px;
-  flex-wrap: wrap;
-}
-
 .button {
-  width: 100px;
-  height: 100px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  background: none;
+  border: none;
+  cursor: pointer;
+  width: 100px; /* Ajusta al tamaño de la imagen */
+  height: 100px; /* Ajusta al tamaño de la imagen */
 }
 
-.green {
-  background-color: #4caf50;
+.button img {
+  width: 100%; /* La imagen ocupa todo el botón */
+  height: auto;
+  display: block;
 }
 
-.yellow {
-  background-color: #ffeb3b;
-}
-
-.red {
-  background-color: #f44336;
-}
-
-.icon {
-  width: 50px;
-  height: 50px;
-  position: relative;
-}
-
-.play {
-  border-style: solid;
-  border-width: 25px 0 25px 50px;
-  border-color: transparent transparent transparent white;
-}
-
-.pause {
-  display: flex;
-  gap: 10px;
-}
-
-.pause::before,
-.pause::after {
-  content: '';
-  width: 15px;
-  height: 50px;
-  background-color: white;
-}
-
-.stop {
-  width: 50px;
-  height: 50px;
-  background-color: white;
+.button:active {
+  transform: scale(0.95); /* Efecto de clic */
 }
