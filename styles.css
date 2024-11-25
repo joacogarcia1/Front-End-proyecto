@@ -31,13 +31,11 @@ nav li {
 }
 
 main {
-    padding: 100px 20px; /* Ajusta el padding para el espacio del header */
+    padding: 100px 20px;
 }
 
 .image-container {
     text-align: center;
     margin-top: 50px;
-
-
 
 }
