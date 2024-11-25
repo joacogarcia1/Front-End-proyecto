@@ -11,3 +11,7 @@ function Iriniciar(){
     document.location.href="iniciarbarcoboton.html";       
 
 }
+function Irquienes(){
+    document.location.href="quienessomos.html";       
+
+}
