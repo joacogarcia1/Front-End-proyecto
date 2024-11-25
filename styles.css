@@ -471,20 +471,21 @@ nav a {
 .controls {
   display: flex;
   justify-content: center;
+  align-items: center;
   gap: 50px;
-  margin-top: 40px;
+  margin-top: 150px; /* Aumenta la distancia desde el encabezado */
 }
 
 .button {
   background: none;
   border: none;
   cursor: pointer;
-  width: 100px; /* Ajusta al tamaño de la imagen */
-  height: 100px; /* Ajusta al tamaño de la imagen */
+  width: 150px; /* Tamaño más grande */
+  height: 150px; /* Tamaño más grande */
 }
 
 .button img {
-  width: 100%; /* La imagen ocupa todo el botón */
+  width: 100%;
   height: auto;
   display: block;
 }
