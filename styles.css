@@ -280,7 +280,7 @@ body {
   }
 /*PARTE QUIENES SOMOS DOS*/
 body {
-    font-family: Arial, sans-serif;
+    font-family: Mplus 1p, sans-serif;
     margin: 0;
     padding: 0;
     background-color: #f7f6eb;
@@ -357,7 +357,7 @@ header {
 /*INICIAR 1*/
 /* styles.css */
 body {
-    font-family: Arial, sans-serif;
+    font-family: Mplus 1p, sans-serif;
     margin: 0;
     padding: 0;
     background-color: #f9f9f9;
@@ -427,3 +427,95 @@ body {
     border-radius: 20px;
     cursor: pointer;
   }
+/*INCIAR 2*/
+body {
+  font-family: Mplus 1p, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f9f9f9;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-around;
+  background-color: #477fc0;
+  padding: 10px 0;
+}
+
+.navbar button {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.navbar .active {
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+main {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.button {
+  width: 100px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.green {
+  background-color: #4caf50;
+}
+
+.yellow {
+  background-color: #ffeb3b;
+}
+
+.red {
+  background-color: #f44336;
+}
+
+.icon {
+  width: 50px;
+  height: 50px;
+  position: relative;
+}
+
+.play {
+  border-style: solid;
+  border-width: 25px 0 25px 50px;
+  border-color: transparent transparent transparent white;
+}
+
+.pause {
+  display: flex;
+  gap: 10px;
+}
+
+.pause::before,
+.pause::after {
+  content: '';
+  width: 15px;
+  height: 50px;
+  background-color: white;
+}
+
+.stop {
+  width: 50px;
+  height: 50px;
+  background-color: white;
+}

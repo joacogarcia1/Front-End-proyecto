@@ -7,7 +7,7 @@ function Irqtres(){
 
 }
 
-function nombre(){
-    document.location.href="quienessomos3.html";       
+function Iriniciar(){
+    document.location.href="iniciarbarcoboton.html";       
 
 }
