@@ -469,27 +469,27 @@ nav a {
 
 /* Controles */
 .controls {
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Dos columnas para los botones */
+  grid-template-rows: auto auto; /* Dos filas para controlar la posición */
   justify-content: center;
   align-items: center;
   gap: 50px;
-  margin-top: 150px; /* Aumenta la distancia desde el encabezado */
+  margin-top: 150px;
 }
 
-.button {
-  background: none;
-  border: none;
-  cursor: pointer;
-  width: 150px; /* Tamaño más grande */
-  height: 150px; /* Tamaño más grande */
+.button-green {
+  grid-column: 1;
+  grid-row: 1; /* Botón verde en la fila 1 */
 }
 
-.button img {
-  width: 100%;
-  height: auto;
-  display: block;
+.button-red {
+  grid-column: 2;
+  grid-row: 1; /* Botón rojo en la fila 1 */
 }
 
-.button:active {
-  transform: scale(0.95); /* Efecto de clic */
+.button-yellow {
+  grid-column: 1 / span 2; /* Botón amarillo centrado */
+  grid-row: 2; /* Botón amarillo en la fila 2 */
+  justify-self: center;
 }
