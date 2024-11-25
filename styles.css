@@ -496,16 +496,16 @@ nav a {
 
 .button-green {
   grid-column: 1;
-  grid-row: 1;
+  grid-row: 1; /* Botón verde en la fila 1 */
 }
 
 .button-red {
   grid-column: 2;
-  grid-row: 1;
+  grid-row: 1; /* Botón rojo en la fila 1 */
 }
 
 .button-yellow {
-  grid-column: 1 / span 2;
-  grid-row: 2;
+  grid-column: 1 / span 2; /* Botón amarillo centrado */
+  grid-row: 2; /* Botón amarillo en la fila 2 */
   justify-self: center;
 }
