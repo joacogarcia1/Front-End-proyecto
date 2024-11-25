@@ -472,40 +472,41 @@ nav a {
   display: grid;
   grid-template-columns: 1fr 1fr; /* Dos columnas */
   grid-template-rows: auto auto; /* Dos filas */
-  justify-content: center;
-  align-items: center;
+  justify-content: center; /* Centra el contenido horizontalmente */
+  align-items: center; /* Centra el contenido verticalmente */
   gap: 50px; /* Espaciado entre botones */
-  margin-top: 150px;
-  background: none; /* Asegura que no haya fondo visible */
-  padding: 0; /* Elimina cualquier espacio interno adicional */
+  margin-top: 150px; /* Espaciado superior para bajar los botones */
 }
 
 .button {
-  background: none;
-  border: none;
-  cursor: pointer;
-  width: 150px;
+  background: none; /* Sin fondo */
+  border: none; /* Sin bordes */
+  cursor: pointer; /* Cambia el cursor al pasar por encima */
+  width: 150px; /* Tamaño del botón */
   height: 150px;
+  display: flex; /* Asegura que las imágenes se centren */
+  justify-content: center; /* Centra la imagen dentro del botón */
+  align-items: center;
 }
 
 .button img {
-  width: 100%;
-  height: auto;
+  width: 100%; /* Imagen ocupa todo el ancho */
+  height: auto; /* Mantén la proporción */
   display: block;
 }
 
 .button-green {
-  grid-column: 1;
-  grid-row: 1; /* Botón verde en la fila 1 */
+  grid-column: 1; /* Primera columna */
+  grid-row: 1; /* Primera fila */
 }
 
 .button-red {
-  grid-column: 2;
-  grid-row: 1; /* Botón rojo en la fila 1 */
+  grid-column: 2; /* Segunda columna */
+  grid-row: 1; /* Primera fila */
 }
 
 .button-yellow {
-  grid-column: 1 / span 2; /* Botón amarillo centrado */
-  grid-row: 2; /* Botón amarillo en la fila 2 */
-  justify-self: center;
+  grid-column: 1 / span 2; /* Ocupa las dos columnas */
+  grid-row: 2; /* Segunda fila */
+  justify-self: center; /* Centra horizontalmente */
 }
