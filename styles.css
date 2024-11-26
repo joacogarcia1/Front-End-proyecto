@@ -1,47 +1,48 @@
 body {
-    font-family: Mplus 1p, sans-serif;
-    margin:0;
-    text-align: center; 
-    }
-    p {
-        max-width: 70%;
-        text-align: center;
-        font-size: 16px; 
-        line-height: 1.5; 
-        margin-bottom: 20px; 
-    }
-    
+  font-family: 'Mplus 1p', sans-serif;
+  margin: 0;
+  text-align: center;
+}
+
+
+
 header {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    background-color: #f0f0f0;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;    
-    padding: 5px;
-    background-color: #4C76B0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #4C76B0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px;
+
 }
 
 nav ul {
-    list-style: none;
-    display: flex;
+  list-style: none;
+  display: flex;
 }
 
 nav li {
-    margin: 0 10px;
-}
-
-main {
-    padding: 100px 20px;
+  margin: 0 10px;
 }
 
 .image-container {
-    text-align: center;
+  text-align: center;
+  margin-bottom: 20px; /* Espacio entre imágenes y texto */
+}
 
+.image-container img:first-child {
+  display: block;
+  margin: 0 auto 20px; /* Margen inferior para separar imágenes */
+}
 
+.logo-title {
+  margin-top: -20px; /* Ajuste para evitar espacio adicional entre imágenes */
+}
 
-
+.text-section {
+  margin-top: 20px; /* Separación del texto con las imágenes */
 }
 /*PARTE QUIENES SOMOS*/
 /* General Styles */
@@ -80,8 +81,22 @@ header {
     font-weight: bold;
     text-decoration: underline;
 }
-
-/* Main Content Styles */
+main{
+  margin-top: 102px;
+  padding-top: 20px;
+  padding-bottom: 30px;
+}
+.descdiv{
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+.desc{
+  width: 100%;
+  text-align: center;
+  font-size: 18px;
+  padding: 0 20vw;
+}
 .info-section {
     max-width: 600px;
     margin: 50px auto;
@@ -156,7 +171,6 @@ header {
     text-decoration: underline;
 }
 
-/* Main Content Styles */
 .info-section {
     max-width: 600px;
     margin: 50px auto;
@@ -222,10 +236,6 @@ body {
   .navbar .active {
     font-weight: bold;
     text-decoration: underline;
-  }
-  
-  main {
-    padding: 20px;
   }
   
   h1 {
@@ -315,7 +325,6 @@ header {
     text-decoration: underline;
 }
 
-/* Main Content Styles */
 .info-section {
     max-width: 600px;
     margin: 50px auto;
@@ -378,11 +387,6 @@ body {
     cursor: pointer;
   }
   
-  main {
-    text-align: center;
-    padding: 20px;
-  }
-  
   h1 {
     color: #333;
     margin-bottom: 20px;
@@ -396,7 +400,6 @@ body {
     text-align: left;
     max-width: 600px;
     margin: 0 auto 20px;
-    position: relative;
   }
   
   .help-message:before {
@@ -404,7 +407,7 @@ body {
     background-image: url('play-icon.png'), url('stop-icon.png'), url('pause-icon.png'); /* Rutas a tus íconos */
     background-size: 80px 80px;
     opacity: 0.2;
-    position: absolute;
+    
     top: 20%;
     left: 10%;
     width: 80%;
@@ -544,11 +547,6 @@ body {
 
 .menu li a:hover {
   text-decoration: underline;
-}
-
-/* Main Section */
-.main-container {
-  margin-top: 100px;
 }
 
 .development-message {
