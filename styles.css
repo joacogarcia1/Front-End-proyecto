@@ -98,6 +98,7 @@ main{
   padding: 0 20vw;
 }
 .info-section {
+    display: flex;
     max-width: 600px;
     margin: 50px auto;
     background-color: white;
@@ -105,6 +106,14 @@ main{
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     text-align: center;
+    flex-direction: column;
+}
+.row-team-member{
+  display: flex;
+  flex-direction: row;
+}
+.row-team-member div{
+  margin: 0 25px;
 }
 .compact{
   width: 100%;
@@ -370,7 +379,7 @@ body {
   }
   
   .help-message {
-    background-color: #e0e0e0;
+    background-color: #ffffff;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
